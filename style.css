@@ -12,6 +12,7 @@ h1 {
 form#search-form {
     width: 100%;
     display: flex;
+    margin-bottom: 0.4rem;
 }
 
 input#search-query {
@@ -30,4 +31,25 @@ input#search-query {
 input#search-query::placeholder {
     color: black;
     font-family: FontAwesome, Roboto;
+}
+
+
+nav#main-navigation {
+    box-shadow: rgb(0 0 0 / 8%) 0 6px 6px;
+}
+
+nav#main-navigation ul {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: space-evenly;
+}
+
+nav#main-navigation li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
 }
